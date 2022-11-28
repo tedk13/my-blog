@@ -1,5 +1,5 @@
 ---
-import Layout from "../layouts/BaseLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "About Me";
 
@@ -21,7 +21,7 @@ const fontWeight = "bold";
 const textCase = "uppercase";
 ---
 
-<Layout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle}>
     <style define:vars={{skillColor, fontWeight, textCase}}>
         h1 {
           color: purple;
@@ -74,4 +74,4 @@ const textCase = "uppercase";
 
         {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
     </main>
-</Layout>
+</BaseLayout>
